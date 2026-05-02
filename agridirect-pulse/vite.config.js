@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/AgriDirect-Pulse/',
   plugins: [
     react(),
     VitePWA({
@@ -45,8 +46,8 @@ export default defineConfig({
         theme_color: '#1B5E20',
         background_color: '#ffffff',
         display: 'standalone',
-        scope: '/',
-        start_url: '/',
+        scope: '/AgriDirect-Pulse/',
+        start_url: '/AgriDirect-Pulse/',
         orientation: 'portrait-primary',
         icons: [
           {
